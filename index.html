@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FixMyImage</title>
+    <meta name="description" content="Edit your images professionally!" />
+    <meta name="google-site-verification" content="cmtgoQ8HshNwG4t-FdkKQdrNM7xT-wZHr5OiOpcZ_HM" />
+    <meta name="author" content="Hercules" />
+    <link rel="icon" href="https://cdn.hercules.app/file_h0hhDHm4tS8SnrqpQ5DEWNq0" />
+    <meta property="og:title" content="FixMyImage" />
+    <meta property="og:description" content="Edit your images professionally!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cdn.hercules.app/file_Oer9SabQ1kcRi3QVtF6SJZWh" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://hercules.app/og/app/%VITE_HERCULES_WEBSITE_ID%.png"
+    />
+    <meta name="twitter:site" content="@UseHercules" />
+
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://cdn.hercules.app" />
+
+    <!-- Google Analytics 4 - Loaded dynamically from backend -->
+    <script id="ga4-script">
+      // GA4 will be loaded dynamically by the app after fetching the measurement ID
+    </script>
+
+    <!-- Detect dark mode preference and set the class before next-themes loads. This avoids a flash of unstyled content (FOUC) when the page loads. -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme");
+          if (theme === "system" || !theme) {
+            var prefersDark = window.matchMedia(
+              "(prefers-color-scheme: dark)",
+            ).matches;
+            theme = prefersDark ? "dark" : "light";
+          }
+          document.documentElement.classList.add(theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link href="/src/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
