@@ -14,6 +14,9 @@ import { Star, Quote, ArrowLeft, Layers } from "lucide-react";
 import { ConvexError } from "convex/values";
 
 function StarRating({ rating, onRatingChange, readonly = false }: { rating: number; onRatingChange?: (rating: number) => void; readonly?: boolean }) {
+  console.log(import.meta.env.VITE_OIDC_AUTHORITY);
+console.log(import.meta.env.VITE_OIDC_CLIENT_ID);
+
   return (
     <div className="flex gap-1">
       {[1, 2, 3, 4, 5].map((star) => (
