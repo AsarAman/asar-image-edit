@@ -82,7 +82,7 @@ export const SignInButton = forwardRef<HTMLButtonElement, SignInButtonProps>(
             await removeUser();
           } else {
            // await signinRedirect();
-           window.location.href = "https://formal-giraffe-103.convex.site/api/auth/google";
+           window.location.href = "https://formal-giraffe-103.convex.site/auth/google";
           }
         } catch (err) {
           console.error("Authentication error:", err);

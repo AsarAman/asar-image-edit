@@ -42,7 +42,7 @@ export default function AuthCallback() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Simply redirect to main app page after Convex sets session
+    // After Convex login, redirect to main app page
     navigate("/editor", { replace: true });
   }, [navigate]);
 
@@ -52,3 +52,4 @@ export default function AuthCallback() {
     </div>
   );
 }
+
