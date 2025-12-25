@@ -16,13 +16,14 @@ import {
 // };
 
 const AUTH_CONFIG: AuthProviderProps = {
-  authority: "https://accounts.google.com",
+  authority: "https://formal-giraffe-103.convex.site", // Convex backend
   client_id: "682838493020-1prl7hmhlgdkivpibes8sph33c65orvi.apps.googleusercontent.com",
   prompt: "select_account",
   response_type: "code",
   scope: "openid profile email",
-  redirect_uri: `${window.location.origin}/auth/callback`,
+  redirect_uri: `${window.location.origin}/auth/callback`, // frontend route to receive session
 };
+
 
 
 
