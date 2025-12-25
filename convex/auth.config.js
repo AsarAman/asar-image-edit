@@ -1,5 +1,4 @@
 
-
 export default {
   providers: [
     {
@@ -12,5 +11,9 @@ export default {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e80755ddc49059ed1077aefa2c8844c61ccff2f1
 
 
