@@ -213,6 +213,8 @@ function TestimonialsContent() {
 }
 
 export default function TestimonialsPage() {
+   console.log(import.meta.env.VITE_OIDC_AUTHORITY);
+console.log(import.meta.env.VITE_OIDC_CLIENT_ID);
   return (
     <div className="min-h-screen bg-white">
       <header className="sticky top-0 z-50 bg-white border-b-4 border-black">
